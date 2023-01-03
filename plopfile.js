@@ -7,7 +7,7 @@ const actionsGitkeep = foldersWithGitkeep.map((folderName) => ({
   path: `src/app/modules/{{ kebabCase name }}/${folderName}/.gitkeep`,
 }));
 
-// https://www.npmjs.com/package/plop
+// https://plopjs.com/documentation/
 /** @param { import('plop').NodePlopAPI } plop */
 module.exports = function (plop) {
   plop.setGenerator("module", {
