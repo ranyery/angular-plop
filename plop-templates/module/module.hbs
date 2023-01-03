@@ -1,0 +1,10 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+import { {{ pascalCase name }}RoutingModule } from './{{ kebabCase name }}-routing.module';
+
+@NgModule({
+  declarations: [],
+  imports: [CommonModule, {{ pascalCase name }}RoutingModule],
+})
+export class {{ pascalCase name }}Module {}

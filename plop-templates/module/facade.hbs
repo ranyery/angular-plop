@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { {{ pascalCase name }}Api } from './apis/{{ kebabCase name }}.api';
+import { {{ pascalCase name }}Service } from './services/{{ kebabCase name }}.service';
+
+@Injectable({ providedIn: 'root' })
+export class {{ pascalCase name }}Facade {
+  constructor(private {{ camelCase name }}Api: {{ pascalCase name }}Api, private {{ camelCase name }}Service: {{ pascalCase name }}Service) {}
+
+  public get isLoading$(): Observable<boolean> {
+    return this.{{ camelCase name }}Service.isLoading$;
+  }
+}
